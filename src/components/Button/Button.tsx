@@ -1,16 +1,10 @@
+import { Props } from '../../types/Props';
 import './Button.css';
 
-type Props = {
-  children?: React.ReactNode;
-  className?: string;
-  style?: any;
-  // onClick?: (e?: MouseEvent) => void;
-}
-
-const Button: React.FC<Props> = ({ children, className, style }: Props) => {
+const Button: React.FC<Props> = ({ children, className, style, onClick, onDoubleClick }: Props) => {
   return (
     <div style={style} className={`ds-button-container ${className ?? ''}`} tabIndex={0}
-      // onClick={onClick}
+      onClick={onClick} onDoubleClick={onDoubleClick}
     >
       {children}
     </div>
