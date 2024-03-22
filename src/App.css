@@ -1,0 +1,19 @@
+.override-button-class {
+  /* width: 200px;
+  color: white;
+  background-color: blue; */
+}
+
+.container {
+  /* display: flex; */
+}
+
+.override-button-class {
+  width: 200px;
+  height: 200px;
+}
+
+.button-inside {
+  display: flex;
+  justify-content: space-between;
+}
