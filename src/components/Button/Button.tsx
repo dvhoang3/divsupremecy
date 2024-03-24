@@ -1,13 +1,16 @@
-import { Props } from '../../types/Props';
+import { HTMLAttributes } from "react";
 import './Button.css';
 
-const Button: React.FC<Props> = ({ children, className, style, onClick, onDoubleClick }: Props) => {
+type ButtonProps = {
+
+} & HTMLAttributes<HTMLButtonElement>
+
+const Button: React.FC<ButtonProps> = ({ children, className, ...htmlAttributes }: ButtonProps) => {
   return (
-    <div style={style} className={`ds-button-container ${className ?? ''}`} tabIndex={0}
-      onClick={onClick} onDoubleClick={onDoubleClick}
+    <button className={`ds-button-container ${className ?? ''}`} {...htmlAttributes}
     >
       {children}
-    </div>
+    </button>
   );
 }
 

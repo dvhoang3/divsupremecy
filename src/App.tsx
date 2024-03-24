@@ -5,10 +5,8 @@ function App() {
   return (
     <>
       <div className="container">
-        <div onDoubleClick={(e) => { console.log(e.target) }}>Div Button</div>
-        <button draggable="true" onDrag={(e) => { console.log(e.target) }}>Default Button</button>
-        <Button className="main" onDoubleClick={(e) => { console.log(e.target) }}>
-          My Button
+        <Button className="main">
+          Button
         </Button>
       </div>
     </>

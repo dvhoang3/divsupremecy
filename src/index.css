@@ -1,0 +1,10 @@
+#root {
+  height: 100%;
+  overflow: auto;
+}
+
+
+body {
+  width: 100vw;
+  height: 100vh;
+}
